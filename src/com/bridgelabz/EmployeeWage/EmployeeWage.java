@@ -10,6 +10,7 @@ public class EmployeeWage
 				int wagePerHour=20;
 				int fullDayHour=8;
 				int partTimeHour=4;
+				int workingDayPerMonth=20;
 				
 				int isPresent=(int)
 				Math.floor(Math.random() * 3);
@@ -18,19 +19,19 @@ public class EmployeeWage
 				case 0:
 					System.out.println("Employee is present");
 					System.out.println("Employee wage=" +fullDayHour*wagePerHour);
+					System.out.println("Employee monthly wage=" +fullDayHour*wagePerHour*workingDayPerMonth);
 					break;
 					
 				case 1:
 					System.out.println("Employee is present as a part time");
 					System.out.println("Employee wage=" +partTimeHour*wagePerHour);
+					System.out.println("Employee monthly wage=" +partTimeHour*wagePerHour*workingDayPerMonth);
 					break;
 					
 				case 2:
 					System.out.println("Employee is absent");
 					System.out.println("Employee wage=0");
-					break;
+					break;	
 				}
-				
 			}
-
 }
